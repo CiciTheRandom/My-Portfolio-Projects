@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <a class="nav-link" href="#Grid_Functions_and_Properties">Grid Functions and Properties</a>
+        <a class="nav-link" href="#Nested_Layouts_with_Div">Nested Layouts with Div</a>
+        <a class="nav-link" href="#Flexbox_Basics_and_Examples">Flexbox Basics and Examples</a>
+        <a class="nav-link" href="#CSS_Positions_and_Usage">CSS Positions and Usage</a>
+        <a class="nav-link" href="#CSS_Measurements_and_Units">CSS Measurements and Units</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Grid_Functions_and_Properties">
+            <header>Grid Functions and Properties</header>
+            <p>CSS Grid Layout is a two-dimensional layout system for the web.</p>
+            <p>It allows for the arrangement of elements in rows and columns.</p>
+            <p>Some common grid properties:</p>
+            <ul>
+                <li><code>display: grid;</code> - Defines a grid container.</li>
+                <li><code>grid-template-columns: auto auto;</code> - Defines column structure.</li>
+                <li><code>grid-template-rows: auto auto;</code> - Defines row structure.</li>
+                <li><code>grid-gap: 10px;</code> - Sets space between grid items.</li>
+                <li><code>grid-column: span 2;</code> - Makes an item span multiple columns.</li>
+                <li><code>grid-row: span 2;</code> - Makes an item span multiple rows.</li>
+            </ul>
+            <p>Example of a grid container:</p>
+            <code>
+                .container {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 1fr;
+                    grid-template-rows: 100px 200px;
+                    grid-gap: 10px;
+                }
+            </code>
+        </section>
+
+        <section class="main-section" id="Nested_Layouts_with_Div">
+            <header>Nested Layouts with Div</header>
+            <p>Using nested divs is essential for structuring a page.</p>
+            <p>They help in creating complex layouts like sidebars and headers.</p>
+            <ul>
+                <li>Use <code>display: flex;</code> for horizontal layouts.</li>
+                <li>Use <code>display: grid;</code> for structured placement.</li>
+            </ul>
+            <p>Example of a nested layout:</p>
+            <code>
+                <.div class="container">
+                    <.div class="sidebar"></div>
+                    <.div class="content">
+                        <.div class="nested"></div>
+                    </div>
+                </div>
+            </code>
+        </section>
+
+        <section class="main-section" id="Flexbox_Basics_and_Examples">
+            <header>Flexbox Basics and Examples</header>
+            <p>Flexbox is a one-dimensional layout model.</p>
+            <p>It is used for aligning items in rows or columns.</p>
+            <ul>
+                <li><code>display: flex;</code> - Enables flexbox.</li>
+                <li><code>flex-direction: row | column;</code> - Defines the main axis direction.</li>
+                <li><code>justify-content: center;</code> - Centers items along the main axis.</li>
+                <li><code>align-items: stretch;</code> - Stretches items along the cross-axis.</li>
+                <li><code>flex-wrap: wrap;</code> - Allows items to wrap onto multiple lines.</li>
+            </ul>
+            <p>Example of a flex container:</p>
+            <code>
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+            </code>
+        </section>
+    
+        <section class="main-section" id="CSS_Positions_and_Usage">
+            <header>CSS Positions and Usage</header>
+            <p>The <code>position</code> property specifies how an element is positioned.</p>
+            <ul>
+                <li><code>static</code> - Default positioning.</li>
+                <li><code>relative</code> - Positions relative to itself.</li>
+                <li><code>absolute</code> - Positions relative to the nearest positioned ancestor.</li>
+                <li><code>fixed</code> - Stays in place even when scrolling.</li>
+            </ul>
+            <p>Example of absolute positioning:</p>
+            <code>
+                .box {
+                    position: absolute;
+                    top: 50px;
+                    left: 100px;
+                }
+            </code>
+        </section>
+    
+        <section class="main-section" id="CSS_Measurements_and_Units">
+            <header>CSS Measurements and Units</header>
+            <p>CSS supports various measurement units.</p>
+            <ul>
+                <li><code>px</code> - Absolute unit.</li>
+                <li><code>em</code> - Relative to the parent element.</li>
+                <li><code>rem</code> - Relative to the root element.</li>
+                <li><code>%</code> - Relative to the parent container.</li>
+            </ul>
+            <p>Example of using <code>rem</code>:</p>
+            <code>
+                .text {
+                    font-size: 2rem;
+                }
+            </code>
+        </section>
+    </main>
+</body>
+</html>
